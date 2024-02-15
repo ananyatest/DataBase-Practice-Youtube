@@ -1,0 +1,7 @@
+// Return all the products in databases
+// Name, Unit Price, New Price (Unit Price * 1.1)
+
+//Solution
+ USE sql_store;
+ SELECT name, unit_price, (unit_price*1.1) AS New_Price
+ FROM products
