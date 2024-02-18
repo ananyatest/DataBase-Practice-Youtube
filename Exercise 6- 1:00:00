@@ -1,3 +1,20 @@
  SELECT * 
  FROM customers
 WHERE address regexp 'trail|avenue';
+ 
+
+SELECT * 
+ FROM customers
+WHERE phone LIKE '%9' ;
+
+
+<b>
+ALTERNATE SOln:
+
+ SELECT * 
+ FROM customers
+WHERE address LIKE '%trail%' OR address LIKE '%avenue%'
+
+ SELECT * 
+ FROM customers
+WHERE Phone regexp '9$'
