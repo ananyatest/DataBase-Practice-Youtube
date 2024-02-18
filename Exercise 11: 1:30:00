@@ -1,4 +1,4 @@
-SELECT o.order_id, o.product_id, o.quantity, o.unit_price, p.name, p.quantity_in_stock, p.unit_price 
+SELECT o.order_id, o.product_id, o.quantity, o.unit_price, p.name, p.quantity_in_stock, p.unit_price as current_price
  FROM order_items o
  JOIN products p
  ON o.product_id = p.product_id;
