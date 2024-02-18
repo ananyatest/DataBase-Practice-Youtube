@@ -1,0 +1,20 @@
+ SELECT * 
+ FROM customers
+WHERE first_name regexp 'elka|ambur'
+
+
+
+ SELECT * 
+ FROM customers
+WHERE last_name regexp 'ey$|on$'
+
+
+
+ SELECT * 
+ FROM customers
+WHERE last_name regexp '^my|se'
+
+
+SELECT * 
+ FROM customers
+WHERE last_name regexp 'b[ru]'
