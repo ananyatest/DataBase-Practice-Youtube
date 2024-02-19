@@ -1,0 +1,7 @@
+SELECT *
+FROM shippers, products;
+
+
+SELECT *
+FROM shippers
+CROSS JOIN products;
